@@ -4,12 +4,12 @@ module.exports = {
 		title: "jFraniCode",
 	},
 	plugins: [
-		{
-			resolve: "gatsby-source-wordpress",
-			options: {
-				url: "http://jfranicodes.local/graphql",
-			},
-		},
+		// {
+		// 	resolve: "gatsby-source-wordpress",
+		// 	options: {
+		// 		url: "http://jfranicodes.local/graphql",
+		// 	},
+		// },
 		"gatsby-plugin-styled-components",
 		"gatsby-plugin-gatsby-cloud",
 		"gatsby-plugin-image",
