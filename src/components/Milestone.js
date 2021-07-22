@@ -1,6 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const MilestoneMarker = styled.div`
+	height: 50px;
+	width: 50px;
+	margin-left: calc(5% - 25px);
+	background: #CBD0D1;
+	border-radius: 50%;
+	min-width: 50px;
+	@media (min-width: 480px) {
+	}
+`;
+
 const MilestoneContainer = styled.div`
 	display: flex;
 	width: 100%;
@@ -9,16 +20,19 @@ const MilestoneContainer = styled.div`
 	z-index: 1;
 	will-change: transform;
 	margin: 2.5rem 0;
-`;
 
-const MilestoneMarker = styled.div`
-	height: 50px;
-	width: 50px;
-	margin-left: calc(5% - 25px);
-	background: #CBD0D1;
-	/* box-shadow: 4px 4px 0px rgba(139, 232, 203, 0.25); */
-	border-radius: 50%;	
-	/* order: 1; */
+	@media (min-width: 480px) {
+		&:nth-child(even) {
+			flex-direction: row-reverse;
+			${MilestoneMarker} {
+				margin-right: calc(5% - 25px);
+				order: 1;
+			}
+		}
+		&:nth-child(odd) ${MilestoneMarker} {
+			order: 1;
+		}
+	}
 `;
 
 const TextContainer = styled.div`
@@ -27,13 +41,18 @@ const TextContainer = styled.div`
 	align-items: flex-start;
 	padding: 16px;
 	background: #FFFFFF;
-	border: 1px solid #888DA7;
+	border: 1px solid rgba(136, 141, 167, 0.5);
 	box-sizing: border-box;
-	box-shadow: 4px 4px 0px rgba(139, 232, 203, 0.25);
-	border-radius: 2px;
+	border-radius: 5px;
 	flex-grow: 1;
 	margin-left: 1.25rem;
-	max-width: 250px;
+	/* max-width: 500px; */
+
+	@media (min-width: 480px) {
+		flex-grow: 0;
+		width: 45%;
+		margin: 0;
+	}
 `;
 
 const Title = styled.h3`
