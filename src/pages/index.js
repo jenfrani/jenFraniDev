@@ -8,7 +8,8 @@ import Milestone from "../components/Milestone";
 const IndexPage = () => {
 	return (
 		<Layout>
-			<h1>Hi</h1>
+			<h1>Jen Frani</h1>
+			<h2>Developer, Creative</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 				Donec eu ligula ac mauris ornare condimentum id vel risus.
@@ -16,10 +17,12 @@ const IndexPage = () => {
 				Proin placerat, eros in consequat pharetra, metus quam lacinia ligula, ut fringilla felis est eget eros.
 				In hac habitasse platea dictumst. Pellentesque urna turpis.
 			</p>
-			<h2>Career Timeline</h2>
 			<Timeline>
-				<Milestone title="Test1" description="Desc1" />
-				<Milestone title="Test1" description="Desc1" />
+				<Milestone title="Information Technology" description="Bachelor's Degree" location="STI College, Philippines" date="October 2012" />
+				<Milestone title="Software Engineer" location="Accenture, Philippines" date="Dec 2013 - Apr 2017" />
+				<Milestone title="Software Engineer" location="Infor, Philippines" date="May 2017 - Jul 2019" />
+				<Milestone title="Moved to Canada" location="Edmonton, Alberta" date="August 2019" />
+				<Milestone title="Technology Management" description="Bachelor's Degree" location="NAIT" date="June 2021" />
 			</Timeline>
 		</Layout>
 

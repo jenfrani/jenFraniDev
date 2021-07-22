@@ -9,7 +9,7 @@ const TimelineContainer = styled.div`
 	::before {
 		content: "";
 		background-color: #7EA2AA;
-		width: 4px;
+		width: 2px;
 		height: 100%;
 		position: absolute;
 		transform: translateX(-50%);
@@ -19,9 +19,12 @@ const TimelineContainer = styled.div`
 
 const Timeline = ({ children }) => {
 	return (
-		<TimelineContainer>
-			{children}
-		</TimelineContainer>
+		<>
+			<h1>Career Timeline</h1>
+			<TimelineContainer>
+				{children}
+			</TimelineContainer>
+		</>
 	);
 };
 

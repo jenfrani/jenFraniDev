@@ -9,7 +9,7 @@ const LogoContainer = styled.div`
 	width: 75px;
 	background-repeat: no-repeat;
 	background-size: contain;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 	`;
 
 const Logo = () => {

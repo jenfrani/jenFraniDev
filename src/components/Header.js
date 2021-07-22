@@ -5,7 +5,6 @@ import { Link } from 'gatsby';
 
 const HeaderContainer = styled.header`
 	display: flex;
-	/* width: 100%; */
 `;
 
 const Header = () => {
