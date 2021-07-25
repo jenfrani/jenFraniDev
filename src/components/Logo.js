@@ -10,6 +10,10 @@ const LogoContainer = styled.div`
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin-bottom: 1rem;
+	@media (min-width: 480px) {
+		height: 100px;
+		width: 100px;
+	}
 	`;
 
 const Logo = () => {

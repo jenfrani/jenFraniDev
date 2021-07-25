@@ -5,7 +5,7 @@ const TimelineContainer = styled.section`
 	position: relative;
 	min-height: 500px;
 	width: 100%;
-	
+	margin-top: 1em;
 	::before {
 		content: "";
 		background-color: #7EA2AA;
@@ -38,7 +38,9 @@ const Timeline = ({ children }) => {
 		<Layout>
 			<h1>Career Timeline</h1>
 			<TimelineContainer>
-				{children}
+				<div style={{ padding: '1em 0' }}>
+					{children}
+				</div>
 			</TimelineContainer>
 		</Layout>
 	);
